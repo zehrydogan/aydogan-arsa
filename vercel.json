@@ -20,11 +20,6 @@
             "dest": "frontend/$1"
         }
     ],
-    "functions": {
-        "backend/dist/main.js": {
-            "runtime": "nodejs18.x"
-        }
-    },
     "env": {
         "NODE_ENV": "production"
     }
