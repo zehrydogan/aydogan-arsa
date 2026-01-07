@@ -16,7 +16,8 @@ export default function FeaturedProperties() {
 
     const fetchFeaturedProperties = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/properties?limit=6&status=PUBLISHED')
+            const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api'
+            const response = await fetch(`${API_BASE_URL}/properties?limit=6&status=PUBLISHED`)
             if (response.ok) {
                 const data = await response.json()
                 setProperties(data.properties || [])

@@ -66,7 +66,7 @@ export default function PropertiesPage() {
             const queryParams = new URLSearchParams({
                 page: pagination.page.toString(),
                 limit: pagination.limit.toString(),
-                status: 'PUBLiSHED',
+                status: 'PUBLISHED',
                 ...filters
             })
 
